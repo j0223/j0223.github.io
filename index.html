@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    .main-content{
+      display: flex;
+      justify-content: space between;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .left-side {
+      flex: 2;
+    }
+
+    .right-side {
+      flex: 1;
+      text-align: center;
+    }
+
+    body{
+      background-color: #ffb7db;
+      color: #1a1a1a;
+      font-family: 'Nunito', 'Segoe UI', sans-serif;
+      padding: 40px 20px;
+  </style>
+
   <title> Jossans Portfolio </title>
 </head>
 <body>
 
-  <h1> Välkommen till min portfolio! </h1>
-  <p> Josefine heter jag och pluggar just nu systemutveckling på Borås Yrkeshögskola med inriktning på programmeringsspråket C#. </p>
-  <p> Min dröm är att få jobba som fullstack developer inom webbutveckling, därför kommer jag att inte bara dela kod i detta portfolio
-  men även digital konst! </p>
+  <h1> PORTFOLIO </h1>
 
+  <div class="main-content">
+    
+    <div class="left-side">
+       <h2> Välkommen till min portfolio! </h2>
+      <p> Josefine heter jag och pluggar just nu systemutveckling på Borås Yrkeshögskola med inriktning på programmeringsspråket C#. </p>
+       <p> Min dröm är att få jobba som fullstack developer inom webbutveckling, därför kommer jag att inte bara dela kod i detta portfolio
+  men även digital konst! </p>
+ 
   <h2> Skolprojekt </h2>
 
   <h3> Projekt: "Jofasas Pastabar" </h3>
@@ -19,13 +49,29 @@
 
   <p>Här ser ni en video på upplägget av pastabaren</p>
   
-  <video controls width= "500">
+  <video controls width= "100%">
     <source src="pastabar-video.mp4" type="video/mp4">
   </video>
-
+  
 
   <p>Här ser ni även kodens uppbyggnad</p>
   <img src="carbon-kod.png" width="500" alt="C# kod">
+    </div>
+
+    <div class="right-side">
+
+      <img src="profilbild.png" alt="bild på mig" class="profile-pic">
+
+      <div class="apps-box">
+        <h4>APPAR JAG ANVÄNDER</h4>
+        <div class="apps-icons">
+          <div class= "icon">Procreate</div>
+          <div class="icon">GitHub</div>
+          <div class="icon">VS Code</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
