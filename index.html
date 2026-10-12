@@ -24,6 +24,64 @@
       color: #1a1a1a;
       font-family: 'Nunito', 'Segoe UI', sans-serif;
       padding: 40px 20px;
+
+      .linkedin-btn {
+        display: inline-block;
+        background color: #ff79c6;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 20px;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+
+      .apps-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .app-icon {
+        background-color: #ff79c6;
+        color: white;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      h1 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 4rem;
+        font-weight: 900;
+        color: #ff79c6;
+
+        -webkit-text-stroke: 3px #1a1a1a;
+
+        text-shadow: 3px 3px 0px #1a1a1a;
+        margin-bottom: 40px;
+      }
+
+      .app-icon, linkedin-btn{
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+      
+      .app-icon:hoover {
+        transform: scale(1.1);
+        background-color: #ff92d0;
+        cursor: pointer;
+      }
+      
+      .linkedin-btn:hoover {
+        transform: scale(1.05);
+        background-color: #ff92d0;
+      }
+      
   </style>
 
   <title> Jossans Portfolio </title>
@@ -61,6 +119,10 @@
     <div class="right-side">
 
       <img src="profilbild.png" alt="bild på mig" class="profile-pic">
+
+      <a href="https://www.linkedin.com/in/josefine-bergendal/" target="_blank" class="linkedin-btn">
+        Besök gärna min LinkedIn! 
+      </a>
 
       <div class="apps-box">
         <h4>APPAR JAG ANVÄNDER</h4>
