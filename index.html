@@ -28,13 +28,14 @@
 
       .linkedin-btn {
         display: inline-block;
-        background color: #ff79c6;
-        color: white;
+        background color: #1a1a1a;
+        color: #ff79c6;
         padding: 10px 20px;
         text-decoration: none;
         border-radius: 20px;
         margin: 20px 0;
         font-weight: bold;
+        border: 2px solid #ff79c6
       }
 
       .apps-icons {
@@ -78,6 +79,20 @@
         transform: scale(1.05);
         background-color: #ff92d0;
       }
+
+      .icon-img {
+        width: 60%;
+        height: auto;
+      }
+
+      .card {
+        background-color: #ff92d0;
+        border-radius: 16px;
+        padding: 25px;
+        margin-bottom: 30px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+        border: 3px solid #1a1a1a;
+      }
       
   </style>
 
@@ -90,17 +105,22 @@
   <div class="main-content">
     
     <div class="left-side">
+      
+      <div class="card">
        <h2> Välkommen till min portfolio! </h2>
       <p> Josefine heter jag och pluggar just nu systemutveckling på Borås Yrkeshögskola med inriktning på programmeringsspråket C#. </p>
        <p> Min dröm är att få jobba som fullstack developer inom webbutveckling, därför kommer jag att inte bara dela kod i detta portfolio
   men även digital konst! </p>
+      </div>
  
   <h2> Skolprojekt </h2>
 
+      <div class="card">
   <h3> Projekt: "Jofasas Pastabar" </h3>
   <p> Labb #2 bestod dels av att skapa en pastameny där användaren kan välja vilken pastarätt dom vill ha, äta här eller ta med
   och hur dom vill betala men vi skulle också använda oss av enkla git kommandon t.ex "git commit" för att lära känna GitHub bättre. 
   Bestämde mig för att även lägga till dryck val och kvitto utskrift, väldigt roligt och lärorik uppgift! </p>
+      </div>
 
   <p>Här ser ni en video på upplägget av pastabaren</p>
   
@@ -124,9 +144,9 @@
       <div class="apps-box">
         <h4>APPAR JAG ANVÄNDER</h4>
         <div class="apps-icons">
-          <div class= "app-icon">Procreate</div>
-          <div class="app-icon">GitHub</div>
-          <div class="app-icon">VS Code</div>
+          <div class= "app-icon"><img src="procreate-pink.png" alt="procreate" class="icon-img"></div>
+          <div class="app-icon"><img src="github-pink.png" alt="GitHub" class="icon-img"></div>
+          <div class="app-icon"><img src="vscode-pink.png" alt="VS Code" class="icon-img"></div>
         </div>
       </div>
     </div>
