@@ -93,6 +93,18 @@
         box-shadow: 0 6px 15px rgba(0,0,0,0.05);
         border: 3px solid #1a1a1a;
       }
+
+      .zoomable-img {
+        transition: transform 0.25s ease;
+        cursor: zoom-in;
+      }
+
+      . zoomable-img:active {
+        transform: scale(1.8);
+        position: relative;
+        z-index: 999;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+      }
       
   </style>
 
@@ -130,7 +142,7 @@
   
 
   <p>Här ser ni även kodens uppbyggnad</p>
-  <img src="carbon-kod.png" width="500" alt="C# kod">
+  <img src="carbon-kod.png" width="500" alt="C# kod" class="zoomable-img">
     </div>
 
     <div class="right-side">
