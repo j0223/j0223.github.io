@@ -58,7 +58,7 @@
         font-weight: bold;
       }
 
-      .app-icon: :after {
+      .app-icon::after {
         content: attr(data-title);
           position: absolute;
         bottom: 95px;
@@ -77,7 +77,7 @@
         transition: opacity 0.2s ease, transform 0.2s ease;
       }
 
-      .app-icon: hover::after {
+      .app-icon:hover::after {
         opacity: 1;
         transform: translateX(0) scale(1);
       }
