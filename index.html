@@ -45,6 +45,7 @@
       }
 
       .app-icon {
+        position: relative;
         background-color: #ff79c6;
         color: white;
         width: 80px;
@@ -55,6 +56,30 @@
         justify-content: center;
         font-size: 0.8rem;
         font-weight: bold;
+      }
+
+      .app-icon: :after {
+        content: attr(data-title);
+          position: absolute;
+        bottom: 95px;
+        background-color: #1a1a1a;
+        color: #ff79c6;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border-radius: 8px;
+        border: 2px solid #ff79c6;
+        white-space: nowrap;
+
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(0) scale(0.8);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+
+      .app-icon: hover::after {
+        opacity: 1;
+        transform: translateX(0) scale(1);
       }
 
       h1 {
