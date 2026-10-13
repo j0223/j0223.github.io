@@ -5,10 +5,14 @@
   <style>
 
     body{
-      background-color: #ffb7db;
+      background: radial-gradient(circle, #ffb7db 60%, #ff83c4 100%);
+      background-attachment: fixed;
+      
       color: #1a1a1a;
       font-family: 'Nunito', 'Segoe UI', sans-serif;
       padding: 40px 20px;
+      margin: 0;
+    }
 
       .linkedin-btn {
         display: inline-block;
@@ -143,10 +147,17 @@
       .art-item img:active {
         object-fit: contain;
         width: auto !important;
-        transform: scale(1.6);
-        position: relative;
-        z-index: 999;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        height: 85vh !important;
+        max-width: 90vw !important;
+        
+        transform: translate(-50%, -50%) scale(1);
+        position: fixed;
+        z-index: 9999;
+        top: 50%;
+        left: 50%
+
+        box-shadow: 0 0 50px rgba(0,0,0,0.7);
+        border: 5px solid #1a1a1a;
       }
 
       .profile-row {
